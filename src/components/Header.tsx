@@ -35,7 +35,7 @@ export function Header(){
       </div>
       
       <div className="login">
-        <a href="#">Login</a>
+        <a href="#" id="login">Login</a>
         <a href="#" id='register'>Register</a>
       </div>
     </HeaderContainer>

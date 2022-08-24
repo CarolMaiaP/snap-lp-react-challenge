@@ -58,10 +58,19 @@ export const HeaderContainer = styled.div`
     align-items: center;
   }
 
+  .login #login:hover{
+    color: #404040;
+  }
+
   .login #register {
     border: 1px solid gray;
     padding: 1rem;
     border-radius: 10px;
+  }
+
+  .login #register:hover{
+    color: #404040;
+    border-color: #404040;
   }
 
   .submenu {
