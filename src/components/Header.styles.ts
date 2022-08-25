@@ -56,10 +56,6 @@ export const HeaderContainer = styled.div`
     display: none;
   }
 
-  .menu-mobile{
-    display: none;
-  }
-
   .login {
     display: flex;
     gap: 1.5rem;
@@ -125,10 +121,6 @@ export const HeaderContainer = styled.div`
       display: none
     }
 
-    /* .menu-mobile{
-      display: block;
-    } */
-
     .btn-abrir {
       display: block;
       font-size: 45px;
@@ -137,13 +129,60 @@ export const HeaderContainer = styled.div`
 
     .menu-content {
       height: 100%;
-      background: #812828;
+      background: #fff;
       position: fixed;
-      width: 0px;
+      width: 240px;
       top: 0;
       right: 0;
       z-index: 1;
       overflow: hidden;
+      animation: openMenu .3s; 
+    }
+
+    @keyframes openMenu{
+      from{
+        opacity: 0;
+        width: 0;
+      }
+      to{
+        opacity: 1;
+        width: 240px;
+      }
+    }
+
+    .btn-close {
+      display: flex;
+      justify-content: end;
+      padding: 15px;
+    }
+
+    .btn-close a {
+      font-size: 40px;
+    }
+
+    .menu-contain {
+      width: 90%;
+      width: 100%;
+    }
+
+    .menu-contain ul{
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      width: 100%;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .menu-contain li{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .menu-contain a{
+      color: #717171;
+      font-size: 1.3rem;
     }
   }
 `
