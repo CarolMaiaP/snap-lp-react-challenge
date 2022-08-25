@@ -8,3 +8,9 @@ main {
   display: flex;
   margin-bottom: 5rem;
 }
+
+@media (max-width: 767px) {
+  main {
+    flex-direction: column-reverse;
+  }
+}

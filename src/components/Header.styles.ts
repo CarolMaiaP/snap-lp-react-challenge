@@ -52,6 +52,14 @@ export const HeaderContainer = styled.div`
     margin-left: 0.4rem;
   }
 
+  .btn-abrir {
+    display: none;
+  }
+
+  .menu-mobile{
+    display: none;
+  }
+
   .login {
     display: flex;
     gap: 1.5rem;
@@ -103,5 +111,39 @@ export const HeaderContainer = styled.div`
 
   .submenu svg{
     margin-right: 1rem;
+  }
+
+
+  @media(max-width: 767px){
+    padding: 1rem;
+
+    .menu{
+      display: none
+    }
+
+    .login{
+      display: none
+    }
+
+    /* .menu-mobile{
+      display: block;
+    } */
+
+    .btn-abrir {
+      display: block;
+      font-size: 45px;
+      margin-bottom: 1rem;
+    }
+
+    .menu-content {
+      height: 100%;
+      background: #812828;
+      position: fixed;
+      width: 0px;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
   }
 `
